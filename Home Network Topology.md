@@ -1,14 +1,14 @@
 # Home Network Topology
 
-Target design for the Edmonton house + new 24x24 garage. This is the network as
-planned — items marked **TBD** are the pending decisions.
+Live network for the Edmonton house + new 24x24 garage, current as of the 2026-10-03
+cutover (Vantiva bridged, UCG-Fiber is the gateway). Items marked **TBD** are the pending decisions.
 
 Legend: `──` wired Ethernet · `══` fiber · `★` PoE powered · `(?)` decision pending
 
 ```
 Telus fibre (XGS-PON, 10000/10000 Mbps)
   │
-Vantiva gateway — bridge mode (192.168.1.254 pre-cutover)
+Vantiva gateway — bridge mode since 2026-10-03
   │ 10G
   │
 Ubiquiti UCG-Fiber (LAN 192.168.1.0/24, console 192.168.1.1)
@@ -62,7 +62,7 @@ Ubiquiti UCG-Fiber (LAN 192.168.1.0/24, console 192.168.1.1)
 | Main LAN | 192.168.1.0/24 | everything by default; UCG-Fiber at .1 |
 | VLAN 20 (IPTV, optional) | — | Telus STBs only if multicast hygiene requires it |
 | VLAN 30 (cameras) | — | all EmpireTech cameras + NVR camera side |
-| Bench (pre-cutover only) | 192.168.10.0/24 | UCG-Fiber double-NATed behind Vantiva during testing |
+| Bench (retired 2026-10-03) | 192.168.10.0/24 | UCG-Fiber double-NATed behind Vantiva during testing |
 
 ## Decisions pending
 
