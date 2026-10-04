@@ -75,6 +75,9 @@ half-configured state):
 
 ## The subnet plan — bench vs. final cutover
 
+> Update 2026-10-03: at the actual cutover the LAN stayed on 192.168.2.0/24 instead of
+> moving back to 192.168.1.0/24 — everything (camera, NASes, statics) is on 192.168.2.x.
+
 | Phase | LAN subnet | Console | Notes |
 |---|---|---|---|
 | Bench (now) | 192.168.10.0/24 | `https://192.168.10.1` | Double-NATed behind the Vantiva; WAN pulls 192.168.1.x |
