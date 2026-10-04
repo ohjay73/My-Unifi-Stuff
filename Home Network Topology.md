@@ -68,3 +68,89 @@ Ubiquiti UCG-Fiber (LAN 192.168.1.0/24, console 192.168.1.1)
 
 Tracked in the [landing README](README.md#upcoming-decisions): wireless AP choice,
 front-door camera pick, and switch selection for the garage + electrical room.
+
+## Live client inventory (UniFi topology, 2026-10-03)
+
+Screenshot transcription of every client the UCG-Fiber currently sees. All appear as
+direct children of the gateway because the unmanaged switches between them are invisible
+to UniFi — the real path is gateway → unmanaged switch → client. List is partial
+(~40 of ~45 visible; a few entries sit below the fold).
+
+### Eeros (6 of 7 visible)
+
+| Client | Link |
+|---|---|
+| eero 99:54 | 2.5 GbE |
+| eero f6:d2 | 2.5 GbE |
+| eero 59:6d | 2.5 GbE |
+| eero 27:94 | 2.5 GbE |
+| eero d6:ed | 2.5 GbE |
+| eero 87:72 | 2.5 GbE |
+
+### NAS
+
+| Client | Link | Notes |
+|---|---|---|
+| 90:09:d0:a4:d… | 10 GbE | Synology DS923+ (90:09:d0 = Synology OUI) — 10G link is up |
+| MAIN-NAS 4e:… | 2.5 GbE | QNAP TS-653D, NIC 1 of 2 (SMB multichannel pair) |
+| MAIN-NAS 4e:… | 2.5 GbE | QNAP TS-653D, NIC 2 of 2 |
+
+### Cameras
+
+| Client | Link | Notes |
+|---|---|---|
+| VIVOTEK Netw… | 2.5 GbE | VIVOTEK alley camera |
+| WYZE_CAKP2… | 2.5 GbE | Wyze Cam Pan v2 |
+| IC Realtime ICI… | FE (100M) | IC Realtime camera — unidentified which one |
+
+### Media / living room
+
+| Client | Link |
+|---|---|
+| NVIDIA Shield … | 2.5 GbE |
+| Living-Room 9… | 2.5 GbE |
+| Yamaha RX-A1… | 2.5 GbE |
+| SDMC Androi… | 2.5 GbE |
+| P210M e7:ca | 2.5 GbE — unidentified |
+| BoostLite-E0C… | 2.5 GbE — unidentified |
+
+### Computers / phones / tablets
+
+| Client | Link |
+|---|---|
+| MacBookPro a… | 2.5 GbE |
+| iPad fb:74 | 2.5 GbE |
+| Ipadminonor2… | 2.5 GbE |
+| candace-s-S2… | 2.5 GbE |
+| Jason-s-S26-… | 2.5 GbE |
+| HP EliteDesk 8… | 2.5 GbE |
+| 5CG011DK5K f… | 2.5 GbE (HP serial — second HP box) |
+| DESKTOP-6EI… | 2.5 GbE |
+
+### Smart home / IoT / energy
+
+| Client | Link |
+|---|---|
+| homeassistant… | 2.5 GbE |
+| Hubitat Elevati… | 2.5 GbE |
+| Sense-N22600… | 2.5 GbE (Sense energy monitor) |
+| airthings-view … | 2.5 GbE (Airthings air quality) |
+| AmazonAQM-… | 2.5 GbE (Amazon air quality monitor) |
+| HS300 09:b2 | 2.5 GbE (Kasa power strip) |
+| HS300 c6:ee | 2.5 GbE (Kasa power strip) |
+| HS300 cf:46 | 2.5 GbE (Kasa power strip) |
+| Rivian f6:10 | 2.5 GbE (Rivian vehicle Wi-Fi) |
+
+### Unidentified
+
+| Client | Link |
+|---|---|
+| Router_Switch… | 2.5 GbE |
+| ADC-220120 0… | 2.5 GbE |
+| C42996C99DC… | 2.5 GbE (MAC-style name) |
+| 00:62:6e:94:4… | 2.5 GbE (MAC only) |
+| AT&T Arris BG… | 2.5 GbE |
+
+Not visible in these shots (possibly below the fold): the two Telus STBs, Apple TV, PS5,
+printer, the 7th eero, SolarEdge inverter, Hue Bridge, Forest monitor, and the house
+EmpireTech camera (.130).
