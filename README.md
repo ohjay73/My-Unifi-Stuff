@@ -4,13 +4,19 @@ A landing pad for my step-by-step homelab how-tos. Each page is a self-contained
 for one part of the home setup — UniFi gear, NAS boxes, and whatever else needs documenting.
 Start here, pick the page you need, and follow it in order.
 
-## Pages
+## UniFi
 
 | Page | What it covers |
 |---|---|
-| [UCG-Fiber Bench Setup Walkthrough — Ubiquiti Cloud Gateway Fiber](UCG-Fiber%20Bench%20Setup%20Walkthrough%20—%20Ubiquiti%20Cloud%20Gateway%20Fiber.md) | Bench bring-up of the Ubiquiti UCG-Fiber behind the Vantiva: cabling, the UniFi app and browser setup paths, the temp 192.168.10.0/24 LAN, and the subnet plan for final cutover |
-| [TELUS Mediaroom IPTV on UniFi Cloud Gateway (UCG-Fiber)](TELUS%20Mediaroom%20IPTV%20on%20UniFi%20Cloud%20Gateway%20(UCG-Fiber).md) | Fixing the ~4m55s live-TV freeze on TELUS Mediaroom/Optik STBs behind the UCG-Fiber: the IGMPv3 multicast group-state timeout and its fix |
-| [UniFi Teleport Access to Synology DSM & Docker Services](UniFi%20Teleport%20Access%20to%20Synology%20DSM.md) | Fixing ERR_CONNECTION_ABORTED when reaching DSM (5000/5001) and Docker services (Sonarr, Plex) over the Teleport VPN: static route in DSM plus firewall permissions |
+| [UCG-Fiber Bench Setup Walkthrough — Ubiquiti Cloud Gateway Fiber](unifi/UCG-Fiber%20Bench%20Setup%20Walkthrough%20—%20Ubiquiti%20Cloud%20Gateway%20Fiber.md) | Bench bring-up of the Ubiquiti UCG-Fiber behind the Vantiva: cabling, the UniFi app and browser setup paths, the temp 192.168.10.0/24 LAN, and the subnet plan for final cutover |
+| [TELUS Mediaroom IPTV on UniFi Cloud Gateway (UCG-Fiber)](unifi/TELUS%20Mediaroom%20IPTV%20on%20UniFi%20Cloud%20Gateway%20(UCG-Fiber).md) | Fixing the ~4m55s live-TV freeze on TELUS Mediaroom/Optik STBs behind the UCG-Fiber: the IGMPv3 multicast group-state timeout and its fix |
+
+## NAS
+
+| Page | What it covers |
+|---|---|
+| [UniFi Teleport Access to Synology DSM & Docker Services](nas/UniFi%20Teleport%20Access%20to%20Synology%20DSM.md) | Fixing ERR_CONNECTION_ABORTED when reaching DSM (5000/5001) and Docker services (Sonarr, Plex) over the Teleport VPN: static route in DSM plus firewall permissions |
+| [Plex Cross-NAS Walkthrough — Synology DS923+ + QNAP](nas/Plex%20Cross-NAS%20Walkthrough%20—%20Synology%20DS923+%20+%20QNAP.md) | Making the QNAP-hosted Plex server see the Synology's SYN_Movies share: SMB on the DS923+, File Station remote mount on the QNAP, Plex libraries, testing, and keeping the mount alive |
 
 ## Coming next
 
@@ -25,6 +31,6 @@ These are the planned pages for the rest of the build — they don't exist yet:
 
 ## Adding a new page
 
-1. Add the `.md` file to this folder (named the same as its title).
-2. Add one row to the table above with a link and a one-line summary.
+1. Add the `.md` file to the right folder (`unifi/`, `nas/`, or a new folder — named the same as its title).
+2. Add one row under that folder's section in the table above, with a link and a one-line summary.
 3. If it's one of the planned pages, move it out of "Coming next" when it's written.
