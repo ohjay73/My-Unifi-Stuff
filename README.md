@@ -28,7 +28,6 @@ These are the planned pages for the rest of the build — they don't exist yet:
 - **Telus STB / IGMP proxy test** — the two-stage live-TV multicast test behind the UCG-Fiber
 - **NVR firewall rules** — allow the NVR to the house camera and the internet, deny to the NAS and other private ranges
 - **Camera lockdown** — P2P/cloud off, VLAN 30, the five EmpireTechs as remotes on the NVR
-- **USW-Pro-Max-16-PoE distribution** — basement port map, VLANs, and the 2.5G uplink to the UCG-Fiber
 - **Garage leg** — fiber trunk, USW-Flex-2.5G-8, NVR, eero Max 7, and the Onkyo
 
 ## Adding a new page
