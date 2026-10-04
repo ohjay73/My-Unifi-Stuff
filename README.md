@@ -20,6 +20,17 @@ Start here, pick the page you need, and follow it in order.
 | [Synology Cloudflare DDNS for Multidomains and Subdomains](nas/Synology%20Cloudflare%20DDNS%20for%20Multidomains%20and%20Subdomains.md) | Adding Cloudflare as a DDNS provider in DSM: one entry updating multiple domains/subdomains via the Cloudflare API, install steps, and troubleshooting |
 | [Nightscout on Synology via Docker Compose and Cloudflare Tunnel](nas/Nightscout%20on%20Synology%20via%20Docker%20Compose%20and%20Cloudflare%20Tunnel.md) | Nightscout for AAPS on a DS923+ in Container Manager (MongoDB + Nightscout + mongo-express), exposed through a Cloudflare Tunnel with no open ports |
 
+## Upcoming decisions
+
+- **Wireless AP** — which access points to run (the 7 eeros are currently in bridge/AP mode).
+- **Front-door camera** — dedicated run from the front door to a PoE port in the electrical room (VLAN 30); camera-only, no doorbell, no switch at the door.
+- **Switch selection** — garage switch and electrical-room distribution switch (the two unmanaged YuanLey switches are slated for replacement).
+
+
+## Reference
+
+- [Home Network Topology](Home%20Network%20Topology.md) — ASCII map of the target network: router port map, switches, NASes, cameras, APs, and what's still to be decided.
+
 ## Coming next
 
 These are the planned pages for the rest of the build — they don't exist yet:
