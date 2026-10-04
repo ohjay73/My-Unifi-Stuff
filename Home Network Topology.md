@@ -11,7 +11,7 @@ Telus fibre (XGS-PON, 10000/10000 Mbps)
 Vantiva gateway — bridge mode since 2026-10-03
   │ 10G
   │
-Ubiquiti UCG-Fiber (LAN 192.168.1.0/24, console 192.168.1.1)
+Ubiquiti UCG-Fiber (LAN 192.168.2.0/24, console 192.168.2.1)
   │
   ├── SFP+ LAN ── UACC-CM-RJ45-MG ── Cat6a ── Synology DS923+ (10G, .211)
   │
@@ -59,7 +59,7 @@ Ubiquiti UCG-Fiber (LAN 192.168.1.0/24, console 192.168.1.1)
 
 | Network | Subnet | Notes |
 |---|---|---|
-| Main LAN | 192.168.1.0/24 | everything by default; UCG-Fiber at .1 |
+| Main LAN | 192.168.2.0/24 | everything by default; UCG-Fiber at 192.168.2.1 |
 | VLAN 20 (IPTV, optional) | — | Telus STBs only if multicast hygiene requires it |
 | VLAN 30 (cameras) | — | all EmpireTech cameras + NVR camera side |
 | Bench (retired 2026-10-03) | 192.168.10.0/24 | UCG-Fiber double-NATed behind Vantiva during testing |
