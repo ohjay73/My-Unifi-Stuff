@@ -9,6 +9,8 @@ Start here, pick the page you need, and follow it in order.
 | Page | What it covers |
 |---|---|
 | [UCG-Fiber Bench Setup Walkthrough — Ubiquiti Cloud Gateway Fiber](UCG-Fiber%20Bench%20Setup%20Walkthrough%20—%20Ubiquiti%20Cloud%20Gateway%20Fiber.md) | Bench bring-up of the Ubiquiti UCG-Fiber behind the Vantiva: cabling, the UniFi app and browser setup paths, the temp 192.168.10.0/24 LAN, and the subnet plan for final cutover |
+| [TELUS Mediaroom IPTV on UniFi Cloud Gateway (UCG-Fiber)](TELUS%20Mediaroom%20IPTV%20on%20UniFi%20Cloud%20Gateway%20(UCG-Fiber).md) | Fixing the ~4m55s live-TV freeze on TELUS Mediaroom/Optik STBs behind the UCG-Fiber: the IGMPv3 multicast group-state timeout and its fix |
+| [UniFi Teleport Access to Synology DSM & Docker Services](UniFi%20Teleport%20Access%20to%20Synology%20DSM.md) | Fixing ERR_CONNECTION_ABORTED when reaching DSM (5000/5001) and Docker services (Sonarr, Plex) over the Teleport VPN: static route in DSM plus firewall permissions |
 
 ## Coming next
 
