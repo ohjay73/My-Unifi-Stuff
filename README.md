@@ -17,6 +17,8 @@ Start here, pick the page you need, and follow it in order.
 |---|---|
 | [UniFi Teleport Access to Synology DSM & Docker Services](nas/UniFi%20Teleport%20Access%20to%20Synology%20DSM.md) | Fixing ERR_CONNECTION_ABORTED when reaching DSM (5000/5001) and Docker services (Sonarr, Plex) over the Teleport VPN: static route in DSM plus firewall permissions |
 | [Plex Cross-NAS Walkthrough — Synology DS923+ + QNAP](nas/Plex%20Cross-NAS%20Walkthrough%20—%20Synology%20DS923+%20+%20QNAP.md) | Making the QNAP-hosted Plex server see the Synology's SYN_Movies share: SMB on the DS923+, File Station remote mount on the QNAP, Plex libraries, testing, and keeping the mount alive |
+| [Synology Cloudflare DDNS for Multidomains and Subdomains](nas/Synology%20Cloudflare%20DDNS%20for%20Multidomains%20and%20Subdomains.md) | Adding Cloudflare as a DDNS provider in DSM: one entry updating multiple domains/subdomains via the Cloudflare API, install steps, and troubleshooting |
+| [Nightscout on Synology via Docker Compose and Cloudflare Tunnel](nas/Nightscout%20on%20Synology%20via%20Docker%20Compose%20and%20Cloudflare%20Tunnel.md) | Nightscout for AAPS on a DS923+ in Container Manager (MongoDB + Nightscout + mongo-express), exposed through a Cloudflare Tunnel with no open ports |
 
 ## Coming next
 
