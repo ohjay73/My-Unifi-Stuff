@@ -1,7 +1,7 @@
-# UniFi Instruction Pages
+# Homelab Walkthroughs
 
-A landing pad for my step-by-step UniFi how-tos. Each page is a self-contained walkthrough
-for one part of the home network build — the UCG-Fiber, VLANs, firewall rules, the works.
+A landing pad for my step-by-step homelab how-tos. Each page is a self-contained walkthrough
+for one part of the home setup — UniFi gear, NAS boxes, and whatever else needs documenting.
 Start here, pick the page you need, and follow it in order.
 
 ## Pages
